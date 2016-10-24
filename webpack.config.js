@@ -41,8 +41,8 @@ module.exports = {
       loaders: ['babel'],
       exclude: path.join(__dirname, 'node_modules')
     }, {
-      test: /\.scss$/,
-      loaders: ['style', 'css', 'sass'],
+      test: /\.css$/,
+      loaders: ['style', 'css?modules'],
       exclude: path.join(__dirname, 'node_modules')
     }, {
       test: /\.svg$/,

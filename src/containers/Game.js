@@ -10,7 +10,7 @@ class Game extends Component {
   render () {
     return (
       <Board>
-        <Puyo /><Puyo />
+        <Puyo {...this.props} /><Puyo />
       </Board>
     )
   }

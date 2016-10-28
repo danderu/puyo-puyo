@@ -1,6 +1,6 @@
 import { MOVE_DOWN, START_GAME } from '../../constants'
 
-const position = (position = {}, action) => {
+const position = ({ position = {} }, action) => {
   switch (action.type) {
     case MOVE_DOWN:
       return {

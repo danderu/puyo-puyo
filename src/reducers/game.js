@@ -7,7 +7,9 @@ const game = (state = {}, action) => {
     case START_GAME:
       return {
         ...state,
-        ...currentPuyoPuyo({ state }, action)
+        currentPuyoPuyo: {
+          ...currentPuyoPuyo(state, action)
+        }
       }
     default:
       return state

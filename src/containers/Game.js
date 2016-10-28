@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { Board, Puyo } from '../components'
+import { Board, PuyoPuyo } from '../components'
 import { startGame } from '../actions'
 
 class Game extends Component {
@@ -8,9 +8,10 @@ class Game extends Component {
     this.props.startGame()
   }
   render () {
+    console.log(this.props.game)
     return (
       <Board>
-        <Puyo {...this.props} /><Puyo />
+        <PuyoPuyo {...this.props} />
       </Board>
     )
   }

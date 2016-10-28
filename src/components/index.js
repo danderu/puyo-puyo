@@ -1,7 +1,7 @@
 import Board from './Board'
-import Puyo from './Puyo'
+import PuyoPuyo from './PuyoPuyo'
 
 export {
   Board,
-  Puyo
+  PuyoPuyo
 }

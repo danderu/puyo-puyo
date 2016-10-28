@@ -1,10 +1,13 @@
 import React from 'react'
-import { puyoPuyo } from './styles.css'
+import styles from './styles.css'
 import Puyo from '../Puyo'
 
-const PuyoPuyo = (props) => {
+const PuyoPuyo = ({ currentPuyoPuyo }) => {
   return (
-    <div className={ puyoPuyo }>
+    <div className={[
+      styles[`posY-${currentPuyoPuyo.position.y}`],
+      styles[`posX-${currentPuyoPuyo.position.x}`]
+    ].join(' ') }>
       <Puyo />
       <Puyo />
     </div>

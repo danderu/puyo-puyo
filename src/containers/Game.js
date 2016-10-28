@@ -8,10 +8,9 @@ class Game extends Component {
     this.props.startGame()
   }
   render () {
-    console.log(this.props.game)
     return (
       <Board>
-        <PuyoPuyo {...this.props} />
+        <PuyoPuyo {...this.props.game} />
       </Board>
     )
   }

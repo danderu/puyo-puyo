@@ -3,6 +3,7 @@ import { MOVE_DOWN, START_GAME } from '../../constants'
 const position = ({ position = {} }, action) => {
   switch (action.type) {
     case MOVE_DOWN:
+    console.log(position)
       return {
         ...position,
         y: position.y !== 0 ? position.y - 1 : position.y

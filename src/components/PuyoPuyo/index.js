@@ -2,11 +2,11 @@ import React from 'react'
 import styles from './styles.css'
 import Puyo from '../Puyo'
 
-const PuyoPuyo = ({ currentPuyoPuyo }) => {
+const PuyoPuyo = ({ position }) => {
   return (
     <div className={[
-      styles[`posY-${currentPuyoPuyo.position.y}`],
-      styles[`posX-${currentPuyoPuyo.position.x}`]
+      styles[`posY-${position.y}`],
+      styles[`posX-${position.x}`]
     ].join(' ') }>
       <Puyo />
       <Puyo />
